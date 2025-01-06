@@ -1,3 +1,11 @@
+---
+// CSS Variables
+const bgColour = "#1e1e1e";
+const defaultText = "#ffffff";
+const purpleText= "#9d03fc";
+const navBg = "#2c2c2c"; 
+const navHover = "#b33ff6"; 
+---
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -5,15 +13,54 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astrosaturn</title>
+
+		<style define:vars={{bgColour, defaultText, purpleText, navBg, navHover}}>
+			body{
+				background-color: var(--bgColour);
+				color: var(--defaultText);
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.header{
+				color: var(--purpleText);
+				font-weight: bold;
+			}
+			.navbar {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: var(--navBg);
+				padding: 1rem;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+			}
+			.navbar a {
+				color: var(--defaultText);
+				text-decoration: none;
+				margin: 0 1rem;
+				font-weight: bold;
+				padding: 0.5rem 1rem;
+				border-radius: 4px;
+				transition: background-color 0.3s ease, color 0.3s ease;
+			}
+			.navbar a:hover {
+				background-color: var(--purpleText);
+				color: var(--bgColour);
+			}
+			.navbar a.active {
+				color: var(--purpleText);
+				text-decoration: underline;
+			}
+		</style>
+
 	</head>
 	<body>
-		<a href="/">Home</a>
-        <a href="/about">About</a>
-		<a href="/blog">Blog</a>
+		<nav class="navbar">
+			<a href="/">Home</a>
+			<a href="/about">About</a>
+			<a href="/blog">Blog</a>
+		</nav>
 
-
-		<h1>Blog</h1>
-		<h2>Personal Development Blog</h2>
+		<h1 class="header">Blog</h1>
+		<h2 class="header">Personal Development Blog</h2>
         <p>Here you will find updates and information on everything I build!</p>
 		<ul>
 		  <li><a href="/posts/post-1/">Post 1</a></li>
