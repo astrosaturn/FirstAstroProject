@@ -8,6 +8,8 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
+<a href="/blog">Back</a>
+
 # My First Blog Post
 
 Published on: 2024-12-20

@@ -8,6 +8,7 @@ image:
     alt: 'St Lawrence Colleges logo'
 tags: ["college", "student", "computer science"]
 ---
+<a href="/blog">Back</a>
 
 Published: 2025-06-01
 
