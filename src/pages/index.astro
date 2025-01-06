@@ -1,9 +1,5 @@
 ---
-const bgColour = "#1e1e1e";
-const defaultText = "#ffffff";
-const purpleText = "#9d03fc";
-const navBg = "#2c2c2c"; 
-const navHover = "#b33ff6"; 
+import '../styles/global.css';
 ---
 <html lang="en">
 	<head>
@@ -13,38 +9,7 @@ const navHover = "#b33ff6";
 		<meta name="generator" content={Astro.generator} />
 		<title>Astrosaturn</title>
 
-		<style define:vars={{bgColour, defaultText, purpleText, navBg, navHover}}>
-			body {
-				background-color: var(--bgColour);
-				color: var(--defaultText);
-				font-family: Arial, Helvetica, sans-serif;
-			}
-			.navbar {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				background-color: var(--navBg);
-				padding: 1rem;
-				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-			}
-			.navbar a {
-				color: var(--defaultText);
-				text-decoration: none;
-				margin: 0 1rem;
-				font-weight: bold;
-				padding: 0.5rem 1rem;
-				border-radius: 4px;
-				transition: background-color 0.3s ease, color 0.3s ease;
-			}
-			.navbar a:hover {
-				background-color: var(--purpleText);
-				color: var(--bgColour);
-			}
-			.navbar a.active {
-				color: var(--purpleText);
-				text-decoration: underline;
-			}
-		</style>
+		
 	</head>
 	<body>
 		<nav class="navbar">
