@@ -33,4 +33,16 @@ with one or two but honestly it doesn't really matter as it was just a personal 
 
 The course content is alright, personally I don't see the use in courses like Career Strategies. But things like COBOL programming and the C++ <br>
 courses have been great. So far my favourite has been the GUI development with C#. But that may change as I am deeply interested in what they have <br>
-in store for the game development course this semseter.
+in store for the game development course this semester.
+
+The people here are great, I've made a number of friends who have the same interest in computer science as I do so working in group projects is a blast.
+
+## Job placement..
+
+I am slightly nervous for the Job Placement program, which is supposed to get us experience in the workforce, which is great, <br>
+but ever since I started I've only ever heard conflicting information about it from the professors and from year 3 students actively in placement. <br>
+The professors told us not to expect paid positions but the year 3 students tell us all positions are paid, at first we were told placement was <br>
+pretty much garaunteed for us but now we are told it's about 50/50. <br>
+
+The real thing that shivers my timbers about job placement is that I will need to quit my current job to take it. So if it isn't paid, or the <br>
+hours arent enough (we are told to expect 18 hours/week), or if I don't even get a placement I may be screwed. <br>
