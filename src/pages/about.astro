@@ -1,5 +1,4 @@
 ---
-const pageTitle = "About me";
 
 const identity = {
   firstName: "Eric",
@@ -10,6 +9,8 @@ const identity = {
 
 const skills = ["C++", "C#", "JavaScript", "Python", "Astro.js", "MySQL"];
 
+import Navigation from '../components/navigation.astro';
+import Footer from '../components/footer.astro';
 import '../styles/global.css';
 ---
 <html lang="en">
@@ -18,17 +19,13 @@ import '../styles/global.css';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
+		<title>About me</title>
 
 	</head>
 	<body>
-		<nav class="navbar">
-			<a href="/">Home</a>
-			<a href="/about">About</a>
-			<a href="/blog">Blog</a>
-		</nav>
+		<Navigation />
 
-		<h1 class="header">{pageTitle}</h1>
+		<h1 class="header">About me</h1>
         <h2 class="header">Hello! My name is {identity.firstName}!</h2>
         <p>I am a second year computer science student at St Lawrence College.</p>
         <p>I am a full stack developer, most familiar with the C languages, Javascript, and Python. I also know a little bit of COBOL.</p>
@@ -44,6 +41,7 @@ import '../styles/global.css';
 		<ul>
 			{skills.map((skill) => <li>{skill}</li>)}
 		</ul>
-
+		
+		<Footer />
 	</body>
 </html>

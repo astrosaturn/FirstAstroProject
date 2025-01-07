@@ -1,4 +1,7 @@
 ---
+import Navigation from '../components/navigation.astro';
+import Footer from '../components/footer.astro';
+import Social from '../components/social.astro'
 import '../styles/global.css';
 ---
 <html lang="en">
@@ -7,18 +10,16 @@ import '../styles/global.css';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astrosaturn</title>
+		<title>Home</title>
 
 		
 	</head>
 	<body>
-		<nav class="navbar">
-			<a href="/" class="active">Home</a>
-			<a href="/about">About</a>
-			<a href="/blog">Blog</a>
-		</nav>
+		<Navigation />
 
 		<h1>Eric Poroznik</h1>
 		<h2>Glad you stopped by, this website is still under construction so there isn't much!</h2>
+
+		<Footer />
 	</body>
 </html>
