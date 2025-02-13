@@ -29,6 +29,7 @@ footer a{
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+
 .navbar a {
     color: #ffffff;
     text-decoration: none;
@@ -36,13 +37,15 @@ footer a{
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
+
+.navbar a:focus,
 .navbar a:hover {
     background-color: #9d03fc;
-    color: #1e1e1e;
 }
-.navbar a.active {
-    color: #9d03fc;
-    text-decoration: underline;
+
+.footerBox :hover{
+    background-color: #9d03fc;
+    transition: background-color 0.3s ease;
 }
