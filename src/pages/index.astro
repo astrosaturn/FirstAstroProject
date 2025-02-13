@@ -1,25 +1,15 @@
 ---
-import Navigation from '../components/navigation.astro';
-import Footer from '../components/footer.astro';
-import '../styles/global.css';
+import BaseLayout from '../layouts/baselayout.astro';
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Home</title>
+<BaseLayout pageTitle = "Home">
+	<h1>Eric Poroznik</h1>
+	<h2>Astro is really hard, but really fun!</h2>
+	<br>
+	<h2>I've been following their tutorial loosely, making my own changes as I go which is really fun to do.<br>
+		Currently, I'm trying to fix the hamburger menu so the icon for it displays in the same block as the icons <br>
+		without also making itself invisible.
 
-		
-	</head>
-	<body>
-		<Navigation />
+	</h2>
 
-		<h1>Eric Poroznik</h1>
-		<h2>Glad you stopped by, this website is still under construction so there isn't much!</h2>
-		<br>
-		<h2>My current plans are to turn it into a personal portfolio of all my projects.</h2>
-		<Footer />
-	</body>
-</html>
+</BaseLayout>
+

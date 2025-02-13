@@ -5,8 +5,8 @@ body{
 }
 
 footer{
-    background-color: 2c2c2c;
-    padding: 0.5rem;
+    background-color: #2c2c2c;
+    padding: 1rem;
     box-shadow: 0 2px 3px rgba(0,0,0,0.3);
     text-align:center;
 }
@@ -17,17 +17,31 @@ footer a{
 }
 
 .header{
-    color: #9d03fc;
+    color: #c37af1;
     font-weight: bold;
 }
 
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff; 
+}
+
+
 .navbar {
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #2c2c2c;
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display:none;
 }
 
 .navbar a {
@@ -49,3 +63,8 @@ footer a{
     background-color: #9d03fc;
     transition: background-color 0.3s ease;
 }
+
+.expanded {
+    display: block;
+}
+
